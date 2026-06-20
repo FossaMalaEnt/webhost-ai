@@ -1,0 +1,25 @@
+{
+  "name": "webhost-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Webhost AI — small-business websites with hosting included. Monorepo: site generator, hosting/deploy, outreach tooling, and marketing site.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test",
+    "build:site": "node apps/marketing/build.mjs",
+    "build": "npm run typecheck && npm run build:site",
+    "preview": "node apps/marketing/preview.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "typescript": "^5.6.3"
+  }
+}

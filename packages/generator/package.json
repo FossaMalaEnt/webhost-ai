@@ -1,0 +1,13 @@
+{
+  "name": "@webhost/generator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Turns a business's details into a polished static website. Used by the marketing site, hosting pipeline, and outreach tooling.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
