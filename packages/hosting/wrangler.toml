@@ -1,0 +1,20 @@
+# Cloudflare Worker config for the production multi-tenant host (PRE-4).
+# Staged, not yet deployed: deploy needs a Cloudflare account + API token
+# (escalated to the CEO). Once CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID are
+# set as CI secrets, `wrangler deploy` publishes the Worker and `npm run host:sync`
+# pushes the registry into KV — no other change required.
+name = "webhost-sites"
+main = "src/worker.ts"
+compatibility_date = "2026-06-01"
+
+# Our own apex; requests here use path-based /sites/<slug>/ routing.
+vars = { PRIMARY_HOST = "webhost.ai" }
+
+# Registry store. Create with:  wrangler kv:namespace create SITES
+[[kv_namespaces]]
+binding = "SITES"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+# Customer custom domains are attached at runtime via Cloudflare for SaaS
+# (custom hostnames) using the domains in sites/custom-domains.json — no per-site
+# redeploy. Automatic SSL is issued by Cloudflare per hostname.

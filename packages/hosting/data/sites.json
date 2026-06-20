@@ -1,0 +1,44 @@
+{
+  "sites": [
+    {
+      "slug": "bloom-vine-florist",
+      "status": "published",
+      "business": {
+        "name": "Bloom & Vine Florist",
+        "industry": "Florist",
+        "tagline": "Fresh, locally sourced arrangements for every occasion.",
+        "about": "Bloom & Vine is a family-run florist creating seasonal bouquets, wedding flowers, and same-day delivery across the city. We work with local growers to bring you the freshest stems all year round.",
+        "location": "Portland, OR",
+        "services": [
+          { "name": "Everyday bouquets", "description": "Hand-tied seasonal arrangements, ready for same-day pickup or delivery." },
+          { "name": "Weddings & events", "description": "Full-service floral design for ceremonies, receptions, and celebrations." },
+          { "name": "Subscriptions", "description": "Fresh flowers delivered to your home or office, weekly or monthly." }
+        ],
+        "contact": { "phone": "+1 503-555-0148", "email": "hello@bloomandvine.example", "address": "210 SE Oak St, Portland, OR" },
+        "brandColor": "#9b2d6b"
+      },
+      "customDomain": "bloomandvine.com",
+      "paidAt": "2026-06-20T17:00:00.000Z",
+      "createdAt": "2026-06-20T16:55:00.000Z"
+    },
+    {
+      "slug": "northside-auto-repair",
+      "status": "preview",
+      "business": {
+        "name": "Northside Auto Repair",
+        "industry": "Auto Repair Shop",
+        "tagline": "Honest, fast repairs from certified local mechanics.",
+        "about": "Northside Auto Repair has kept the neighborhood on the road for over 20 years. From oil changes to full diagnostics, our ASE-certified technicians get you back on the road quickly and fairly.",
+        "location": "Columbus, OH",
+        "services": [
+          { "name": "Diagnostics", "description": "Computerized engine and electrical diagnostics with a clear, upfront quote." },
+          { "name": "Routine maintenance", "description": "Oil changes, brakes, tires, and scheduled service to keep your car running." },
+          { "name": "Repairs", "description": "Engine, transmission, and suspension repairs by certified technicians." }
+        ],
+        "contact": { "phone": "+1 614-555-0192", "email": "service@northsideauto.example", "address": "88 N High St, Columbus, OH" },
+        "brandColor": "#1d4e89"
+      },
+      "createdAt": "2026-06-20T16:58:00.000Z"
+    }
+  ]
+}

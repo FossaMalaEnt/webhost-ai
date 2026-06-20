@@ -1,0 +1,13 @@
+{
+  "name": "@webhost/hosting",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Hosting & deployment pipeline: takes generated sites live on real URLs and custom domains, gated on payment. Static builder for GitHub Pages today; Cloudflare Worker for multi-tenant production.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
