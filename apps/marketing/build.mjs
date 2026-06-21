@@ -4,6 +4,7 @@
 // output the outreach tool will send to prospects.
 // Node strips the TypeScript types from the imported .ts source at runtime.
 import { generateSite } from "../../packages/generator/src/index.ts";
+import { runCampaign } from "../../packages/outreach/src/index.ts";
 import { mkdir, writeFile, readFile, readdir } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -12,6 +13,9 @@ const here = dirname(fileURLToPath(import.meta.url));
 const repoRoot = join(here, "..", "..");
 const outDir = join(here, "dist");
 const samplesDir = join(repoRoot, "samples");
+const leadsFile = join(repoRoot, "packages", "outreach", "leads", "sample-leads.json");
+// Public base URL the demos are served from (the GitHub Pages site).
+const PAGES_BASE_URL = "https://fossamalaent.github.io/webhost-ai";
 
 // --- Our own landing page (dogfooded through the generator) -----------------
 
@@ -159,3 +163,34 @@ if (demos.length) {
   await writeFile(join(outDir, "demos", "index.html"), galleryPage(demos), "utf8");
   console.log(`Built demo gallery -> demos/index.html (${demos.length} demos)`);
 }
+
+// --- Outreach prospect demos ------------------------------------------------
+// Render the live preview demos the outreach tool links in its messages, so the
+// preview URLs in any campaign sheet resolve to real pages on this deploy. These
+// are reachable by URL (for the prospect) but kept out of the public gallery.
+
+async function buildOutreachDemos() {
+  let leads = [];
+  try {
+    const parsed = JSON.parse(await readFile(leadsFile, "utf8"));
+    leads = Array.isArray(parsed) ? parsed : parsed.leads ?? [];
+  } catch {
+    return;
+  }
+  if (!leads.length) return;
+
+  const campaign = runCampaign(leads, { baseUrl: PAGES_BASE_URL });
+  for (const r of campaign.results) {
+    const dir = join(outDir, "demos", r.slug);
+    await mkdir(dir, { recursive: true });
+    await writeFile(join(dir, "index.html"), r.html, "utf8");
+    console.log(`Built outreach demo -> demos/${r.slug}/index.html  (${r.previewUrl})`);
+  }
+  if (campaign.errors.length) {
+    for (const e of campaign.errors) {
+      console.error(`  ! outreach lead "${e.lead.name || "(unnamed)"}" failed: ${e.error}`);
+    }
+  }
+}
+
+await buildOutreachDemos();

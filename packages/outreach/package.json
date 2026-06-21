@@ -1,0 +1,17 @@
+{
+  "name": "@webhost/outreach",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "AI outreach tooling: source leads, auto-generate a personalized demo site for each, and draft outreach with a live preview link. The acquisition loop.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "bin": {
+    "webhost-outreach": "./src/cli.ts"
+  },
+  "scripts": {
+    "test": "node --test",
+    "outreach": "node ./src/cli.ts"
+  }
+}

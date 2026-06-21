@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Tony's Auto Repair",
+    "industry": "Auto Repair",
+    "location": "Tucson, AZ",
+    "owner": "Tony Marino",
+    "phone": "+1 520-555-0117",
+    "email": "tony@tonysauto.example",
+    "established": 1998,
+    "webPresence": "facebook-only",
+    "notes": "Active Facebook page with great reviews, no website. Strong word-of-mouth shop."
+  },
+  {
+    "name": "Maple Street Bakery",
+    "industry": "Bakery & Cafe",
+    "location": "Burlington, VT",
+    "owner": "Dana Whitfield",
+    "phone": "+1 802-555-0148",
+    "email": "hello@maplestreetbakery.example",
+    "specialties": ["sourdough breads", "custom cakes", "morning pastries", "wedding catering"],
+    "webPresence": "none",
+    "notes": "Found via Google Maps listing only. No site, no menu online."
+  },
+  {
+    "name": "Coastal Cuts Barbershop",
+    "industry": "Barber & Salon",
+    "location": "Wilmington, NC",
+    "owner": "Marcus Lee",
+    "phone": "+1 910-555-0193",
+    "webPresence": "directory-only",
+    "notes": "Listed in a local directory; booking is phone-only."
+  },
+  {
+    "name": "Greenline Landscaping",
+    "industry": "Landscaping & Lawn Care",
+    "location": "Boise, ID",
+    "owner": "Sam Ortega",
+    "phone": "+1 208-555-0162",
+    "email": "quotes@greenlinelawn.example",
+    "established": 2011,
+    "specialties": ["weekly lawn maintenance", "irrigation repair", "seasonal cleanups", "tree trimming"],
+    "webPresence": "outdated-site",
+    "notes": "Has a one-page site from ~2014, not mobile-friendly."
+  },
+  {
+    "name": "Bella Notte Trattoria",
+    "industry": "Italian Restaurant",
+    "location": "Providence, RI",
+    "owner": "Gina Russo",
+    "phone": "+1 401-555-0175",
+    "email": "ciao@bellanotte.example",
+    "established": 2006,
+    "webPresence": "facebook-only",
+    "notes": "Posts daily specials to Facebook only; no menu or reservations online."
+  }
+]
