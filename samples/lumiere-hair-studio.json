@@ -1,0 +1,43 @@
+{
+  "name": "Lumière Hair Studio",
+  "industry": "Hair Salon",
+  "location": "Portland, OR",
+  "tagline": "Modern cuts, balayage, and color in a calm Pearl District studio.",
+  "about": "Lumière is a boutique hair studio in Portland's Pearl District. Our stylists specialize in lived-in color, precision cuts, and balayage that grows out beautifully. We keep our chairs limited so every guest gets unhurried, one-on-one attention — and a great cup of coffee while you're with us.",
+  "established": 2016,
+  "brandColor": "#b08968",
+  "template": "bold",
+  "ctaLabel": "Book an appointment",
+  "heroImage": {
+    "src": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1600&q=80",
+    "alt": "A bright, modern hair salon interior"
+  },
+  "aboutImage": {
+    "src": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80",
+    "alt": "A stylist working on a client's hair"
+  },
+  "services": [
+    { "name": "Cut & Style", "description": "Consultation, precision cut, and a finish you can recreate at home.", "price": "From $65" },
+    { "name": "Balayage & Color", "description": "Hand-painted, lived-in color tailored to your tone and lifestyle.", "price": "From $160" },
+    { "name": "Treatments", "description": "Bond-building and gloss treatments to keep color vibrant and hair healthy.", "price": "From $40" }
+  ],
+  "gallery": [
+    { "src": "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80", "alt": "Close-up of a fresh balayage color result" },
+    { "src": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80", "alt": "A stylist blow-drying a client's hair" }
+  ],
+  "hours": [
+    { "days": "Tuesday – Friday", "hours": "10:00am – 7:00pm" },
+    { "days": "Saturday", "hours": "9:00am – 5:00pm" },
+    { "days": "Sunday – Monday", "hours": "Closed" }
+  ],
+  "testimonials": [
+    { "quote": "Best balayage I've ever had — it still looked great four months later.", "author": "Anya P." },
+    { "quote": "Calm, unhurried, and genuinely talented stylists. I won't go anywhere else.", "author": "Devon M." }
+  ],
+  "contact": {
+    "phone": "+1 503-555-0188",
+    "email": "hello@lumierehair.example",
+    "address": "210 NW 11th Ave, Portland, OR 97209",
+    "bookingUrl": "https://lumierehair.example/book"
+  }
+}

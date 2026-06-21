@@ -1,0 +1,44 @@
+{
+  "name": "Bella's Trattoria",
+  "industry": "Italian Restaurant",
+  "location": "Austin, TX",
+  "tagline": "Handmade pasta and wood-fired classics in the heart of Austin.",
+  "about": "Family-run since 1998, Bella's Trattoria brings the warmth of a Roman kitchen to South Austin. Every plate of pasta is rolled by hand each morning, our sauces simmer all day, and our wine list is chosen to match. Whether it's a weeknight dinner or a celebration, you'll be treated like family.",
+  "established": 1998,
+  "brandColor": "#7a1f1f",
+  "template": "classic",
+  "ctaLabel": "Book a table",
+  "heroImage": {
+    "src": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80",
+    "alt": "Warm, candlelit dining room at Bella's Trattoria"
+  },
+  "aboutImage": {
+    "src": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    "alt": "A plate of fresh handmade tagliatelle"
+  },
+  "services": [
+    { "name": "Dinner Service", "description": "Seasonal handmade pasta, wood-fired mains, and an all-Italian wine list.", "price": "Mains from $18" },
+    { "name": "Private Events", "description": "Book our back room for up to 30 guests — birthdays, rehearsals, and team dinners.", "price": "From $40/guest" },
+    { "name": "Weekend Brunch", "description": "Frittatas, fresh pastries, and bottomless Bellinis every Saturday and Sunday.", "price": "Sat–Sun, 10am–2pm" }
+  ],
+  "gallery": [
+    { "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80", "alt": "Diners enjoying dinner at the restaurant" },
+    { "src": "https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=800&q=80", "alt": "Fresh ingredients on the counter" },
+    { "src": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80", "alt": "A wood-fired pizza fresh from the oven" }
+  ],
+  "hours": [
+    { "days": "Monday – Thursday", "hours": "5:00pm – 10:00pm" },
+    { "days": "Friday", "hours": "5:00pm – 11:00pm" },
+    { "days": "Saturday – Sunday", "hours": "10:00am – 11:00pm" }
+  ],
+  "testimonials": [
+    { "quote": "The best Italian in Austin, hands down. The carbonara is worth the drive across town.", "author": "Maria G., regular since 2012" },
+    { "quote": "We hosted our anniversary dinner here and the staff made it unforgettable.", "author": "The Delgado family" }
+  ],
+  "contact": {
+    "phone": "+1 512-555-0100",
+    "email": "hello@bellastrattoria.example",
+    "address": "12 South Congress Ave, Austin, TX 78704",
+    "bookingUrl": "https://bellastrattoria.example/reserve"
+  }
+}

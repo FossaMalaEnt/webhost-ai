@@ -14,7 +14,10 @@ const types = { ".html": "text/html; charset=utf-8", ".css": "text/css", ".js": 
 createServer(async (req, res) => {
   try {
     const url = (req.url || "/").split("?")[0];
-    const rel = url === "/" ? "index.html" : url.replace(/^\/+/, "");
+    let rel = url.replace(/^\/+/, "");
+    // Resolve directory paths to their index.html, mirroring GitHub Pages.
+    if (rel === "" || rel.endsWith("/")) rel += "index.html";
+    else if (!rel.includes(".")) rel += "/index.html";
     const ext = rel.slice(rel.lastIndexOf("."));
     const body = await readFile(join(dist, rel));
     res.writeHead(200, { "content-type": types[ext] || "application/octet-stream" });

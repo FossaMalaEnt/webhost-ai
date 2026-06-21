@@ -1,0 +1,40 @@
+{
+  "name": "Joe's Plumbing & Heating",
+  "industry": "Plumbing & HVAC",
+  "location": "Denver, CO",
+  "tagline": "Fast, honest plumbing and heating — same-day service, upfront pricing.",
+  "about": "Joe's Plumbing & Heating has kept Denver homes running for over 20 years. We're a licensed, insured, family-owned team that shows up on time, explains the problem in plain English, and charges a fair flat rate — no surprises. From a leaky faucet to a full furnace replacement, we treat your home like our own.",
+  "established": 2003,
+  "brandColor": "#1d4ed8",
+  "template": "bold",
+  "ctaLabel": "Request a quote",
+  "heroImage": {
+    "src": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1600&q=80",
+    "alt": "A professional plumber fixing a sink under a counter"
+  },
+  "aboutImage": {
+    "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
+    "alt": "Plumbing tools laid out on a workbench"
+  },
+  "services": [
+    { "name": "Emergency Repairs", "description": "Burst pipes, clogged drains, no hot water — we're on call 24/7.", "price": "Same-day, flat rate" },
+    { "name": "Heating & Furnace", "description": "Furnace tune-ups, repairs, and energy-efficient replacements before winter hits.", "price": "Free estimates" },
+    { "name": "Water Heaters", "description": "Tank and tankless installation and repair, with up to 10-year warranties.", "price": "From $1,200 installed" },
+    { "name": "Drain Cleaning", "description": "Camera inspection and professional clearing for stubborn or recurring clogs.", "price": "From $89" }
+  ],
+  "hours": [
+    { "days": "Monday – Friday", "hours": "7:00am – 7:00pm" },
+    { "days": "Saturday", "hours": "8:00am – 4:00pm" },
+    { "days": "Emergencies", "hours": "24 / 7" }
+  ],
+  "testimonials": [
+    { "quote": "Joe came out within two hours on a Sunday and fixed our burst pipe for exactly what he quoted.", "author": "Karen T., Wash Park" },
+    { "quote": "Replaced our furnace in a day and walked us through every option. No upselling.", "author": "Mike R., Highlands" }
+  ],
+  "contact": {
+    "phone": "+1 303-555-0142",
+    "email": "service@joesplumbing.example",
+    "address": "880 Industrial Blvd, Denver, CO 80216",
+    "bookingUrl": "https://joesplumbing.example/quote"
+  }
+}
