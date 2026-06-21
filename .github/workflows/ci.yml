@@ -27,9 +27,10 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npm run typecheck
       - run: npm test
-      - run: npm run build:site
+      # Full build = typecheck + marketing site + hosted customer sites (build:host),
+      # so paid sites under /sites/ deploy to Pages alongside the marketing site.
+      - run: npm run build
       - name: Upload site artifact
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
